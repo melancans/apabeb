@@ -5894,7 +5894,7 @@ res.json(loghandler.invalidKey)
 }
 })
 
-router.get('/sfw/waifu', async (req, res, next) => {
+router.get('/waifu', async (req, res, next) => {
         var Apikey = req.query.apikey
             
 	if(!Apikey) return res.json(loghandler.notparam)
@@ -5917,7 +5917,7 @@ res.json(loghandler.invalidKey)
 }
 })
 
-router.get('/sfw/nekonime', async (req, res, next) => {
+router.get('/nekonime', async (req, res, next) => {
         var Apikey = req.query.apikey
             
 	if(!Apikey) return res.json(loghandler.notparam)
@@ -5940,7 +5940,7 @@ res.json(loghandler.invalidKey)
 }
 })
 
-router.get('/sfw/shinobu', async (req, res, next) => {
+router.get('/shinobu', async (req, res, next) => {
         var Apikey = req.query.apikey
             
 	if(!Apikey) return res.json(loghandler.notparam)
@@ -5963,7 +5963,7 @@ res.json(loghandler.invalidKey)
 }
 })
 
-router.get('/sfw/megumin', async (req, res, next) => {
+router.get('/megumin', async (req, res, next) => {
         var Apikey = req.query.apikey
             
 	if(!Apikey) return res.json(loghandler.notparam)
