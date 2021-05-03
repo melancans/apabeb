@@ -13,7 +13,7 @@ var creator = creatorList[Math.floor(Math.random() * creatorList.length)];
 var vhtear = 'Tebingtinggi123'
 var xteam = 'AkiraBotWa'
 var leys = 'OneDayOneCharity'
-const listkey = ["bangjep", "kangdev"];
+const listkey = ["orangkaro", "pangkal"];
 
 var ytdl = require('ytdl-core');
 var ytpl = require('ytpl');
@@ -142,6 +142,8 @@ loghandler = {
     }
 }
 
+var invalidKey = __path + '/views/invalidKey.html'
+
 var len = 15
         var arr = '123456789abcdefghijklmnopqrstuvwxyz'
         var random = '';
@@ -162,7 +164,7 @@ var len = 15
 router.get('/wallpaper/cyberspace', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/CyberSpace.json`))
@@ -179,7 +181,7 @@ router.get('/wallpaper/cyberspace', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
