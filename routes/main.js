@@ -31,6 +31,10 @@ router.get('/asupan', (req, res) => {
     res.sendFile(__path + '/docs/asupan.html')
 })
 
+router.get('/wibu', (req, res) => {
+    res.sendFile(__path + '/docs/wibu.html')
+})
+
 router.get('/nsfw', (req, res) => {
     res.sendFile(__path + '/docs/nsfw.html')
 })
