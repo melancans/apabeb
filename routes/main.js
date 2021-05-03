@@ -34,6 +34,9 @@ router.get('/asupan', (req, res) => {
 router.get('/nsfw', (req, res) => {
     res.sendFile(__path + '/docs/nsfw.html')
 })
+router.get('/sfw', (req, res) => {
+    res.sendFile(__path + '/docs/sfw.html')
+})
 
 router.get('/other', (req, res) => {
     res.sendFile(__path + '/docs/other.html')
