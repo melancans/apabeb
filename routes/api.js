@@ -188,7 +188,7 @@ res.sendFile(invalidKey)
 
 router.get('/wallpaper/teknologi', async (req, res, next) => {
         const Apikey = req.query.apikey;
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/Technology.json`))
@@ -205,7 +205,7 @@ router.get('/wallpaper/teknologi', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -213,7 +213,7 @@ res.json(loghandler.invalidKey)
 router.get('/wallpaper/muslim', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/Islamic.json`))
@@ -230,7 +230,7 @@ router.get('/wallpaper/muslim', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -238,7 +238,7 @@ res.json(loghandler.invalidKey)
 router.get('/wallpaper/programming', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/Programming.json`))
@@ -255,7 +255,7 @@ router.get('/wallpaper/programming', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -263,7 +263,7 @@ res.json(loghandler.invalidKey)
 router.get('/wallpaper/pegunungan', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/Mountain.json`))
@@ -280,14 +280,14 @@ router.get('/wallpaper/pegunungan', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/wallpaper/anony', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/anony.json`))
@@ -304,14 +304,14 @@ router.get('/wallpaper/anony', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/wallpaper/joker', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/joker.json`))
@@ -328,14 +328,14 @@ router.get('/wallpaper/joker', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/wallpaper/hijaber', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/hijaber.json`))
@@ -352,14 +352,14 @@ router.get('/wallpaper/hijaber', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/wallpaper/cecans', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/cecan.json`))
@@ -376,14 +376,14 @@ router.get('/wallpaper/cecans', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/wallpaper/cogans', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.fdci.se/rep.php?gambar=cowokganteng`))
@@ -400,14 +400,14 @@ router.get('/wallpaper/cogans', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/wallpaper/harley', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/harley.json`))
@@ -424,13 +424,13 @@ router.get('/wallpaper/harley', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/cekapikey', async(req, res, next) => {
   const apikey = req.query.apikey;
-  if(!apikey) return res.json(loghandler.notparam)
+  if(!apikey) return res.sendFile(invalidKey)
   if(listkey.includes(apikey)) {
     res.json({
       status: 'active',
@@ -439,14 +439,14 @@ router.get('/cekapikey', async(req, res, next) => {
       message: 'apikey active'
     })
   } else {
-    res.json(loghandler.invalidKey)
+    res.sendFile(invalidKey)
   }
 })
 
 router.get('/muslim/niatshalat', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/data/dataNiatShalat.json`))
@@ -462,14 +462,14 @@ router.get('/muslim/niatshalat', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/muslim/tahlil', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/data/dataTahlil.json`))
@@ -485,14 +485,14 @@ router.get('/muslim/tahlil', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/muslim/wirid', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/data/dataWirid.json`))
@@ -508,14 +508,14 @@ router.get('/muslim/wirid', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/muslim/ayatkursi', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/data/dataAyatKursi.json`))
@@ -531,14 +531,14 @@ router.get('/muslim/ayatkursi', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/muslim/doaharian', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/data/dataDoaHarian.json`))
@@ -554,14 +554,14 @@ router.get('/muslim/doaharian', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/muslim/bacaanshalat', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/data/dataBacaanShalat.json`))
@@ -577,7 +577,7 @@ router.get('/muslim/bacaanshalat', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -585,7 +585,7 @@ router.get('/muslim/jadwalshalat', async (req, res, next) => {
         var Apikey = req.query.apikey,
             kota = req.query.kota
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!kota) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter kota"})
 
@@ -608,7 +608,7 @@ router.get('/muslim/jadwalshalat', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -634,7 +634,7 @@ router.get("/kisahnabi", (req, res) => {
 router.get('/asupan', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/asupan.js`))
@@ -651,14 +651,14 @@ router.get('/asupan', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/rikagusriani', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/asupan/rikagusriani.json`))
@@ -675,14 +675,14 @@ router.get('/rikagusriani', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/asupan/santuy', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/santuy.json`))
@@ -699,14 +699,14 @@ router.get('/asupan/santuy', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/ukty', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/ukhty.json`))
@@ -723,14 +723,14 @@ router.get('/ukty', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/bocil', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/bocil.json`))
@@ -747,14 +747,14 @@ router.get('/bocil', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/ghea', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/binjaicity/warga62/master/geayubi.json`))
@@ -771,14 +771,14 @@ router.get('/ghea', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nsfw/ass', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/ass.json`))
@@ -795,14 +795,14 @@ router.get('/nsfw/ass', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nsfw/ahegao', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/ahegao.json`))
@@ -819,14 +819,14 @@ router.get('/nsfw/ahegao', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nsfw/bdsm', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/bdsm.json`))
@@ -843,14 +843,14 @@ router.get('/nsfw/bdsm', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nsfw/blowjob', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/blowjob.json`))
@@ -867,14 +867,14 @@ router.get('/nsfw/blowjob', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nsfw/cuckold', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/cuckold.json`))
@@ -891,14 +891,14 @@ router.get('/nsfw/cuckold', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nsfw/cum', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/cum.json`))
@@ -915,14 +915,14 @@ router.get('/nsfw/cum', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nsfw/ero', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/ero.json`))
@@ -939,14 +939,14 @@ router.get('/nsfw/ero', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nsfw/femdom', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/femdom.json`))
@@ -963,14 +963,14 @@ router.get('/nsfw/femdom', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nsfw/foot', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/foot.json`))
@@ -987,14 +987,14 @@ router.get('/nsfw/foot', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nsfw/gangbang', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/gangbang.json`))
@@ -1011,14 +1011,14 @@ router.get('/nsfw/gangbang', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nsfw/glasses', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/glasses.json`))
@@ -1035,14 +1035,14 @@ router.get('/nsfw/glasses', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nsfw/hentai', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/hentai.json`))
@@ -1059,14 +1059,14 @@ router.get('/nsfw/hentai', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nsfw/hentaigif', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/hnt_gifs.json`))
@@ -1083,14 +1083,14 @@ router.get('/nsfw/hentaigif', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nsfw/jahy', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/jahy.json`))
@@ -1107,14 +1107,14 @@ router.get('/nsfw/jahy', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nsfw/masturbation', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/masturbation.json`))
@@ -1131,14 +1131,14 @@ router.get('/nsfw/masturbation', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nsfw/neko', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/nsfwNeko.json`))
@@ -1155,14 +1155,14 @@ router.get('/nsfw/neko', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nsfw/orgy', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/orgy.json`))
@@ -1179,14 +1179,14 @@ router.get('/nsfw/orgy', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nsfw/panties', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/panties.json`))
@@ -1203,14 +1203,14 @@ router.get('/nsfw/panties', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nsfw/pussy', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/pussy.json`))
@@ -1227,14 +1227,14 @@ router.get('/nsfw/pussy', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nsfw/thighs', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/thighs.json`))
@@ -1251,14 +1251,14 @@ router.get('/nsfw/thighs', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nsfw/yuri', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/JB-Api/main/nsfw/yuri.json`))
@@ -1275,7 +1275,7 @@ router.get('/nsfw/yuri', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -1283,7 +1283,7 @@ router.get('/serti/tolol', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -1295,7 +1295,7 @@ router.get('/serti/tolol', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -1303,7 +1303,7 @@ router.get('/kodepos', async (req, res, next) => {
         var Apikey = req.query.apikey,
             query = req.query.query
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!query) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter kode pos"})
 
@@ -1320,7 +1320,7 @@ router.get('/kodepos', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -1328,7 +1328,7 @@ router.get('/lirik', async (req, res, next) => {
         var Apikey = req.query.apikey,
             judul = req.query.judul
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!judul) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter judul"})
 
@@ -1345,7 +1345,7 @@ router.get('/lirik', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -1353,7 +1353,7 @@ router.get('/nama/ninja', async (req, res, next) => {
         var Apikey = req.query.apikey,
             nama = req.query.nama
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!nama) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter nama"})
 
@@ -1370,7 +1370,7 @@ router.get('/nama/ninja', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -1378,7 +1378,7 @@ router.get('/chord', async (req, res, next) => {
         var Apikey = req.query.apikey,
             judul = req.query.judul
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!judul) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter judul"})
 
@@ -1395,7 +1395,7 @@ router.get('/chord', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -1403,7 +1403,7 @@ router.get('/text/alay', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
 
@@ -1420,14 +1420,14 @@ router.get('/text/alay', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/cerpen', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://python-jepri.herokuapp.com/api/cerpen?key=Kagami`))
@@ -1443,14 +1443,14 @@ router.get('/cerpen', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/cersex', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://python-jepri.herokuapp.com/api/cersex?key=Kagami`))
@@ -1469,14 +1469,14 @@ router.get('/cersex', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/infogempa', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://python-jepri.herokuapp.com/api/gempa?key=Kagami`))
@@ -1492,7 +1492,7 @@ router.get('/infogempa', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -1500,7 +1500,7 @@ router.get('/infocuaca', async (req, res, next) => {
         var Apikey = req.query.apikey,
             kota = req.query.kota
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!kota) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter kota"})
 
@@ -1516,7 +1516,7 @@ router.get('/infocuaca', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -1524,7 +1524,7 @@ router.get('/font', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
 
@@ -1541,7 +1541,7 @@ router.get('/font', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -1549,7 +1549,7 @@ router.get('/font2', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
 
@@ -1566,14 +1566,14 @@ router.get('/font2', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/caklontong', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/kuis/main/caklontong.json`))
@@ -1589,14 +1589,14 @@ router.get('/caklontong', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/tebak/bendera', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/kalakkaro/random/main/kuis/tebakbendera.json`))
@@ -1612,14 +1612,14 @@ router.get('/tebak/bendera', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/family100', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/kuis/main/family100.json`))
@@ -1635,14 +1635,14 @@ router.get('/family100', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/tebakgambar', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/jepribarus/kuis/main/tebakgambar.json`))
@@ -1658,7 +1658,7 @@ router.get('/tebakgambar', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -1666,7 +1666,7 @@ router.get('/ytmp4', async (req, res, next) => {
         var Apikey = req.query.apikey,
             url = req.query.url
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
 
@@ -1687,7 +1687,7 @@ router.get('/ytmp4', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -1695,7 +1695,7 @@ router.get('/ytmp3', async (req, res, next) => {
         var Apikey = req.query.apikey,
             url = req.query.url
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
 
@@ -1716,7 +1716,7 @@ router.get('/ytmp3', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -1724,7 +1724,7 @@ router.get('/ytmp4/2', async (req, res, next) => {
         var Apikey = req.query.apikey,
             url = req.query.url
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
 
@@ -1745,7 +1745,7 @@ router.get('/ytmp4/2', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -1753,7 +1753,7 @@ router.get('/ytmp3/2', async (req, res, next) => {
         var Apikey = req.query.apikey,
             url = req.query.url
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
 
@@ -1774,7 +1774,7 @@ router.get('/ytmp3/2', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -1782,7 +1782,7 @@ router.get('/play/mp3', async (req, res, next) => {
         var Apikey = req.query.apikey,
             query = req.query.query
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!query) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter query"})
 
@@ -1804,7 +1804,7 @@ router.get('/play/mp3', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -1812,7 +1812,7 @@ router.get('/play/mp4', async (req, res, next) => {
         var Apikey = req.query.apikey,
             query = req.query.query
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!query) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter query"})
 
@@ -1834,7 +1834,7 @@ router.get('/play/mp4', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -1842,7 +1842,7 @@ router.get('/Instagram/stalk', async (req, res, next) => {
         var Apikey = req.query.apikey,
             username = req.query.username
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!username) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter username"})
 
@@ -1864,7 +1864,7 @@ router.get('/Instagram/stalk', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -1872,7 +1872,7 @@ router.get('/igdl/video', async (req, res, next) => {
         var Apikey = req.query.apikey,
             url = req.query.url
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
 
@@ -1894,7 +1894,7 @@ router.get('/igdl/video', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -1902,7 +1902,7 @@ router.get('/fb/download', async (req, res, next) => {
         var Apikey = req.query.apikey,
             url = req.query.url
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
 
@@ -1920,7 +1920,7 @@ router.get('/fb/download', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -1928,7 +1928,7 @@ router.get('/yt/search', async (req, res, next) => {
         var Apikey = req.query.apikey,
             search = req.query.search
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!search) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter search"})
 
@@ -1945,7 +1945,7 @@ router.get('/yt/search', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -1953,7 +1953,7 @@ router.get('/tiktok/dl', async (req, res, next) => {
         var Apikey = req.query.apikey,
             url = req.query.url
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
 
@@ -1970,7 +1970,7 @@ router.get('/tiktok/dl', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -1978,7 +1978,7 @@ router.get('/github/stalk', async (req, res, next) => {
         var Apikey = req.query.apikey,
             username = req.query.username
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!username) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter username"})
 
@@ -2002,7 +2002,7 @@ router.get('/github/stalk', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2010,7 +2010,7 @@ router.get('/twitter/stalk', async (req, res, next) => {
         var Apikey = req.query.apikey,
             username = req.query.username
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!username) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter username"})
 
@@ -2036,7 +2036,7 @@ router.get('/twitter/stalk', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2044,7 +2044,7 @@ router.get('/joox', async (req, res, next) => {
         var Apikey = req.query.apikey,
             search = req.query.search
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!search) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter search"})
 
@@ -2064,7 +2064,7 @@ router.get('/joox', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2072,7 +2072,7 @@ router.get('/download/twitter', async (req, res, next) => {
         var Apikey = req.query.apikey,
             url = req.query.url
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
 
@@ -2090,7 +2090,7 @@ router.get('/download/twitter', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2098,7 +2098,7 @@ router.get('/mediafire', async (req, res, next) => {
         var Apikey = req.query.apikey,
             url = req.query.url
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
 
@@ -2118,7 +2118,7 @@ router.get('/mediafire', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2126,7 +2126,7 @@ router.get('/tinyurl', async (req, res, next) => {
         var Apikey = req.query.apikey,
             url = req.query.url
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
 
@@ -2143,7 +2143,7 @@ router.get('/tinyurl', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2151,7 +2151,7 @@ router.get('/bitly', async (req, res, next) => {
         var Apikey = req.query.apikey,
             url = req.query.url
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
 
@@ -2168,7 +2168,7 @@ router.get('/bitly', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2176,7 +2176,7 @@ router.get('/shorturl', async (req, res, next) => {
         var Apikey = req.query.apikey,
             url = req.query.url
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
 
@@ -2193,7 +2193,7 @@ router.get('/shorturl', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2201,7 +2201,7 @@ router.get('/cuttly', async (req, res, next) => {
         var Apikey = req.query.apikey,
             url = req.query.url
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
 
@@ -2218,7 +2218,7 @@ router.get('/cuttly', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2226,7 +2226,7 @@ router.get('/smule', async (req, res, next) => {
         var Apikey = req.query.apikey,
             url = req.query.url
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!url) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter url"})
 
@@ -2243,7 +2243,7 @@ router.get('/smule', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2251,7 +2251,7 @@ router.get('/playstore', async (req, res, next) => {
         var Apikey = req.query.apikey,
             query = req.query.query
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!query) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter query"})
 
@@ -2268,7 +2268,7 @@ router.get('/playstore', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2276,7 +2276,7 @@ router.get('/wikipedia', async (req, res, next) => {
         var Apikey = req.query.apikey,
             query = req.query.query
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!query) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter query"})
 
@@ -2293,7 +2293,7 @@ router.get('/wikipedia', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2301,7 +2301,7 @@ router.get('/brainly', async (req, res, next) => {
         var Apikey = req.query.apikey,
             query = req.query.query
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!query) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter query"})
 
@@ -2319,7 +2319,7 @@ router.get('/brainly', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2328,7 +2328,7 @@ router.get('/persegi/panjang', async (req, res, next) => {
             pjg = req.query.pjg
             lbr = req.query.lbr
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!pjg) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter panjang"})
         if(!lbr) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter lebar"})
@@ -2349,7 +2349,7 @@ router.get('/persegi/panjang', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2357,7 +2357,7 @@ router.get('/persegi/rumus', async (req, res, next) => {
         var Apikey = req.query.apikey,
             sisi = req.query.sisi
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!sisi) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter sisi"})
 
@@ -2377,7 +2377,7 @@ router.get('/persegi/rumus', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2385,7 +2385,7 @@ router.get('/kubik', async (req, res, next) => {
         var Apikey = req.query.apikey,
             q = req.query.q
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!q) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter query"})
 
@@ -2402,7 +2402,7 @@ router.get('/kubik', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2410,7 +2410,7 @@ router.get('/kuadrat', async (req, res, next) => {
         var Apikey = req.query.apikey,
             q = req.query.q
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!q) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter query"})
 
@@ -2427,7 +2427,7 @@ router.get('/kuadrat', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2435,7 +2435,7 @@ router.get('/kbbi', async (req, res, next) => {
         var Apikey = req.query.apikey,
             q = req.query.q
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!q) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter query"})
 
@@ -2453,7 +2453,7 @@ router.get('/kbbi', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2461,7 +2461,7 @@ router.get('/artinama', async (req, res, next) => {
         var Apikey = req.query.apikey,
             nama = req.query.nama
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!nama) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter nama"})
 
@@ -2478,7 +2478,7 @@ router.get('/artinama', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2486,7 +2486,7 @@ router.get('/artimimpi', async (req, res, next) => {
         var Apikey = req.query.apikey,
             mimpi = req.query.mimpi
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!mimpi) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter mimpi"})
 
@@ -2503,14 +2503,14 @@ router.get('/artimimpi', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/tahi/lalat', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://leyscoders-api.herokuapp.com/api/tahi-lalat?apikey=OneDayOneCharity`))
@@ -2526,14 +2526,14 @@ router.get('/tahi/lalat', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nama/jawa', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://leyscoders-api.herokuapp.com/api/namajawa?apikey=OneDayOneCharity`))
@@ -2549,14 +2549,14 @@ router.get('/nama/jawa', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/jam/indo', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://leyscoders-api.herokuapp.com/api/time?apikey=OneDayOneCharity`))
@@ -2572,14 +2572,14 @@ router.get('/jam/indo', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/jadwal/bola', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://leyscoders-api.herokuapp.com/api/jadwalbola?apikey=OneDayOneCharity`))
@@ -2595,7 +2595,7 @@ router.get('/jadwal/bola', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2603,7 +2603,7 @@ router.get('/jam/dunia', async (req, res, next) => {
         var Apikey = req.query.apikey,
             kota = req.query.kota
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!kota) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter kota"})
 
@@ -2621,7 +2621,7 @@ router.get('/jam/dunia', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2629,7 +2629,7 @@ router.get('/jadwal/tv', async (req, res, next) => {
         var Apikey = req.query.apikey,
             chanel = req.query.chanel
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!chanel) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel tv"})
 
@@ -2646,7 +2646,7 @@ router.get('/jadwal/tv', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2656,7 +2656,7 @@ router.get('/cinta/segitiga', async (req, res, next) => {
             nama2 = req.query.nama2
             nama3 = req.query.nama3
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!nama1) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter nama1"})
         if(!nama2) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter nama2"})
@@ -2675,7 +2675,7 @@ router.get('/cinta/segitiga', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2683,7 +2683,7 @@ router.get('/pinterest', async (req, res, next) => {
         var Apikey = req.query.apikey,
             query = req.query.query
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!query) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter query"})
 
@@ -2701,7 +2701,7 @@ router.get('/pinterest', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2709,7 +2709,7 @@ router.get('/gambar/google', async (req, res, next) => {
         var Apikey = req.query.apikey,
             query = req.query.query
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!query) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter query"})
 
@@ -2727,7 +2727,7 @@ router.get('/gambar/google', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2735,7 +2735,7 @@ router.get('/biografi', async (req, res, next) => {
         var Apikey = req.query.apikey,
             tokoh = req.query.tokoh
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!tokoh) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter tokoh"})
 
@@ -2752,7 +2752,7 @@ router.get('/biografi', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2760,7 +2760,7 @@ router.get('/cek/ip', async (req, res, next) => {
         var Apikey = req.query.apikey,
             ip = req.query.ip
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!ip) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter ip"})
 
@@ -2780,7 +2780,7 @@ router.get('/cek/ip', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2788,7 +2788,7 @@ router.get('/hilih', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
 
@@ -2805,7 +2805,7 @@ router.get('/hilih', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2813,7 +2813,7 @@ router.get('/halah', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
 
@@ -2830,7 +2830,7 @@ router.get('/halah', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2838,7 +2838,7 @@ router.get('/heleh', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
 
@@ -2855,7 +2855,7 @@ router.get('/heleh', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2863,7 +2863,7 @@ router.get('/huluh', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
 
@@ -2880,7 +2880,7 @@ router.get('/huluh', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -2889,7 +2889,7 @@ router.get('/translate', async (req, res, next) => {
             text = req.query.text
             to = req.query.to
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
         if(!to) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter to"})
@@ -2909,14 +2909,14 @@ router.get('/translate', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/bucin', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://python-jepri.herokuapp.com/api/bucin?key=Kagami`))
@@ -2932,14 +2932,14 @@ router.get('/bucin', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/motivasi', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/kalakkaro/random/main/quetes/motivasi.json`))
@@ -2956,14 +2956,14 @@ router.get('/motivasi', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/quote/anime', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://python-jepri.herokuapp.com/api/qanime?key=Kagami`))
@@ -2979,14 +2979,14 @@ router.get('/quote/anime', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/quote/gambar', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://python-jepri.herokuapp.com/api/qanimegr?key=Kagami`))
@@ -3002,14 +3002,14 @@ router.get('/quote/gambar', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/quote/bijak', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/kalakkaro/random/main/quetes/bijak.json`))
@@ -3026,14 +3026,14 @@ router.get('/quote/bijak', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/quote/joker', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/kalakkaro/random/main/quetes/joker.json`))
@@ -3050,14 +3050,14 @@ router.get('/quote/joker', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/quote/islami', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/kalakkaro/random/main/quetes/agamis.json`))
@@ -3074,14 +3074,14 @@ router.get('/quote/islami', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/pantun', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/kalakkaro/random/main/quetes/pantun.json`))
@@ -3098,14 +3098,14 @@ router.get('/pantun', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/dare', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/kalakkaro/random/main/quetes/dare.json`))
@@ -3122,14 +3122,14 @@ router.get('/dare', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/truth/aneh', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/kalakkaro/random/main/quetes/truhtaneh.json`))
@@ -3146,14 +3146,14 @@ router.get('/truth/aneh', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/trut', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/kalakkaro/random/main/quetes/truht.json`))
@@ -3170,14 +3170,14 @@ router.get('/trut', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/caption/dilan', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://xptnewapi.000webhostapp.com/newapixptn/katakatadilan.php?apikey=xptn3`))
@@ -3193,14 +3193,14 @@ router.get('/caption/dilan', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/caption/doi', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://xptnewapi.000webhostapp.com/newapixptn/katadoi.php?apikey=xptn3`))
@@ -3216,14 +3216,14 @@ router.get('/caption/doi', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/caption/doraemon', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://xptnewapi.000webhostapp.com/newapixptn/katadoraemon.php?apikey=xptn3`))
@@ -3239,14 +3239,14 @@ router.get('/caption/doraemon', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/caption/hits', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://xptnewapi.000webhostapp.com/newapixptn/kataeren.php?apikey=xptn3`))
@@ -3262,14 +3262,14 @@ router.get('/caption/hits', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/caption/hacker', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://xptnewapi.000webhostapp.com/newapixptn/katakatahacker.php?apikey=xptn3`))
@@ -3285,14 +3285,14 @@ router.get('/caption/hacker', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/caption', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://xptnewapi.000webhostapp.com/newapixptn/katastory.php?apikey=xptn3`))
@@ -3308,14 +3308,14 @@ router.get('/caption', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/quran', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.banghasan.com/quran/format/json/acak`))
@@ -3331,7 +3331,7 @@ router.get('/quran', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3339,7 +3339,7 @@ router.get('/photooxy/cup', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3356,7 +3356,7 @@ router.get('/photooxy/cup', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3364,7 +3364,7 @@ router.get('/photooxy/cup2', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3381,7 +3381,7 @@ router.get('/photooxy/cup2', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3390,7 +3390,7 @@ router.get('/photooxy/glitch', async (req, res, next) => {
             text = req.query.text
             text2 = req.query.text2
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
         if(!text2) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text2"})
@@ -3408,7 +3408,7 @@ router.get('/photooxy/glitch', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3418,7 +3418,7 @@ router.get('/photooxy/google', async (req, res, next) => {
             text2 = req.query.text2
             text3 = req.query.text3
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
         if(!text2) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text2"})
@@ -3437,7 +3437,7 @@ router.get('/photooxy/google', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3446,7 +3446,7 @@ router.get('/photooxy/pubg', async (req, res, next) => {
             text = req.query.text
             text2 = req.query.text2
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
         if(!text2) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text2"})
@@ -3464,7 +3464,7 @@ router.get('/photooxy/pubg', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3473,7 +3473,7 @@ router.get('/photooxy/battlefield', async (req, res, next) => {
             text = req.query.text
             text2 = req.query.text2
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
         if(!text2) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text2"})
@@ -3491,7 +3491,7 @@ router.get('/photooxy/battlefield', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3499,7 +3499,7 @@ router.get('/photooxy/neon', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3516,7 +3516,7 @@ router.get('/photooxy/neon', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3524,7 +3524,7 @@ router.get('/photooxy/glow', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3541,7 +3541,7 @@ router.get('/photooxy/glow', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3549,7 +3549,7 @@ router.get('/photooxy/summer', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3566,7 +3566,7 @@ router.get('/photooxy/summer', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3574,7 +3574,7 @@ router.get('/photooxy/flower', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3591,7 +3591,7 @@ router.get('/photooxy/flower', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3599,7 +3599,7 @@ router.get('/photooxy/burn', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3616,7 +3616,7 @@ router.get('/photooxy/burn', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3624,7 +3624,7 @@ router.get('/photooxy/art', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3641,7 +3641,7 @@ router.get('/photooxy/art', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3649,7 +3649,7 @@ router.get('/photooxy/wooden', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3666,7 +3666,7 @@ router.get('/photooxy/wooden', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3674,7 +3674,7 @@ router.get('/photooxy/golden', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3691,7 +3691,7 @@ router.get('/photooxy/golden', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3699,7 +3699,7 @@ router.get('/photooxy/langit', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3716,7 +3716,7 @@ router.get('/photooxy/langit', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3724,7 +3724,7 @@ router.get('/photooxy/pot', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3741,7 +3741,7 @@ router.get('/photooxy/pot', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3749,7 +3749,7 @@ router.get('/photooxy/romantic', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3766,7 +3766,7 @@ router.get('/photooxy/romantic', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3774,7 +3774,7 @@ router.get('/photooxy/love', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3791,7 +3791,7 @@ router.get('/photooxy/love', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3799,7 +3799,7 @@ router.get('/photooxy/under', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3816,7 +3816,7 @@ router.get('/photooxy/under', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3824,7 +3824,7 @@ router.get('/photooxy/wolf', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3841,7 +3841,7 @@ router.get('/photooxy/wolf', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3849,7 +3849,7 @@ router.get('/photooxy/water', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3866,7 +3866,7 @@ router.get('/photooxy/water', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3874,7 +3874,7 @@ router.get('/photooxy/rainbow', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3891,7 +3891,7 @@ router.get('/photooxy/rainbow', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3899,7 +3899,7 @@ router.get('/photooxy/night', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3916,7 +3916,7 @@ router.get('/photooxy/night', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3924,7 +3924,7 @@ router.get('/photooxy/fire', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3941,7 +3941,7 @@ router.get('/photooxy/fire', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3949,7 +3949,7 @@ router.get('/photooxy/harry', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3966,7 +3966,7 @@ router.get('/photooxy/harry', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3974,7 +3974,7 @@ router.get('/photooxy/horor', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -3991,7 +3991,7 @@ router.get('/photooxy/horor', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -3999,7 +3999,7 @@ router.get('/photooxy/smoke', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -4016,7 +4016,7 @@ router.get('/photooxy/smoke', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4024,7 +4024,7 @@ router.get('/photooxy/between', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel text"})
 
@@ -4041,7 +4041,7 @@ router.get('/photooxy/between', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4049,7 +4049,7 @@ router.get('/textpro/blueneon', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4061,7 +4061,7 @@ router.get('/textpro/blueneon', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4069,7 +4069,7 @@ router.get('/textpro/matrix', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4081,7 +4081,7 @@ router.get('/textpro/matrix', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4089,7 +4089,7 @@ router.get('/textpro/dropwater', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4101,7 +4101,7 @@ router.get('/textpro/dropwater', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4110,7 +4110,7 @@ router.get('/textpro/wolflogo', async (req, res, next) => {
 	    text = req.query.text
 	text2 = req.query.text2
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   if(!text2) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text2"})
@@ -4123,7 +4123,7 @@ router.get('/textpro/wolflogo', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4131,7 +4131,7 @@ router.get('/textpro/blackpink', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4143,7 +4143,7 @@ router.get('/textpro/blackpink', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4151,7 +4151,7 @@ router.get('/textpro/gold', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4163,7 +4163,7 @@ router.get('/textpro/gold', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4171,7 +4171,7 @@ router.get('/textpro/silver', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4183,7 +4183,7 @@ router.get('/textpro/silver', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4191,7 +4191,7 @@ router.get('/textpro/pasir4', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4203,7 +4203,7 @@ router.get('/textpro/pasir4', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4211,7 +4211,7 @@ router.get('/textpro/text3d', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4223,7 +4223,7 @@ router.get('/textpro/text3d', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4232,7 +4232,7 @@ router.get('/textpro/pornhub', async (req, res, next) => {
 	    text = req.query.text
 	text2 = req.query.text2
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   if(!text2) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text2"})
@@ -4245,7 +4245,7 @@ router.get('/textpro/pornhub', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4254,7 +4254,7 @@ router.get('/textpro/marvel', async (req, res, next) => {
 	    text = req.query.text
 	text2 = req.query.text2
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   if(!text2) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text2"})
@@ -4267,7 +4267,7 @@ router.get('/textpro/marvel', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4275,7 +4275,7 @@ router.get('/textpro/light', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4287,7 +4287,7 @@ router.get('/textpro/light', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4295,7 +4295,7 @@ router.get('/textpro/neon', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4307,7 +4307,7 @@ router.get('/textpro/neon', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4315,7 +4315,7 @@ router.get('/textpro/cloud', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4327,7 +4327,7 @@ router.get('/textpro/cloud', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4335,7 +4335,7 @@ router.get('/textpro/gradient', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4347,7 +4347,7 @@ router.get('/textpro/gradient', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4356,7 +4356,7 @@ router.get('/textpro/vintage', async (req, res, next) => {
 	    text = req.query.text
 	text2 = req.query.text2
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   if(!text2) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text2"})
@@ -4369,7 +4369,7 @@ router.get('/textpro/vintage', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4377,7 +4377,7 @@ router.get('/textpro/pasir2', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4389,7 +4389,7 @@ router.get('/textpro/pasir2', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4397,7 +4397,7 @@ router.get('/textpro/pasir3', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4409,7 +4409,7 @@ router.get('/textpro/pasir3', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4417,7 +4417,7 @@ router.get('/textpro/pasir', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4429,7 +4429,7 @@ router.get('/textpro/pasir', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4437,7 +4437,7 @@ router.get('/textpro/1997', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4449,7 +4449,7 @@ router.get('/textpro/1997', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4457,7 +4457,7 @@ router.get('/textpro/minion', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4469,7 +4469,7 @@ router.get('/textpro/minion', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4477,7 +4477,7 @@ router.get('/textpro/helloween', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4489,7 +4489,7 @@ router.get('/textpro/helloween', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4497,7 +4497,7 @@ router.get('/textpro/joker', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4509,7 +4509,7 @@ router.get('/textpro/joker', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4518,7 +4518,7 @@ router.get('/textpro/lion', async (req, res, next) => {
 	    text = req.query.text
 	text2 = req.query.text2
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   if(!text2) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text2"})
@@ -4531,7 +4531,7 @@ router.get('/textpro/lion', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4539,7 +4539,7 @@ router.get('/textpro/party', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4551,7 +4551,7 @@ router.get('/textpro/party', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4559,7 +4559,7 @@ router.get('/textpro/glass', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4571,7 +4571,7 @@ router.get('/textpro/glass', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4579,7 +4579,7 @@ router.get('/textpro/grafity', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4591,7 +4591,7 @@ router.get('/textpro/grafity', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4599,7 +4599,7 @@ router.get('/serti/ff', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4611,7 +4611,7 @@ router.get('/serti/ff', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4619,7 +4619,7 @@ router.get('/serti/ff2', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4631,7 +4631,7 @@ router.get('/serti/ff2', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4639,7 +4639,7 @@ router.get('/serti/ff3', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4651,7 +4651,7 @@ router.get('/serti/ff3', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4659,7 +4659,7 @@ router.get('/serti/ml', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4671,7 +4671,7 @@ router.get('/serti/ml', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4679,7 +4679,7 @@ router.get('/serti/ml2', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4691,7 +4691,7 @@ router.get('/serti/ml2', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4699,7 +4699,7 @@ router.get('/serti/ml3', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4711,7 +4711,7 @@ router.get('/serti/ml3', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4719,7 +4719,7 @@ router.get('/serti/pubg', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4731,7 +4731,7 @@ router.get('/serti/pubg', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4739,7 +4739,7 @@ router.get('/serti/pubg2', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4751,7 +4751,7 @@ router.get('/serti/pubg2', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4759,7 +4759,7 @@ router.get('/serti/pubg3', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4771,7 +4771,7 @@ router.get('/serti/pubg3', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4781,7 +4781,7 @@ router.get('/nulis2', async (req, res, next) => {
 	kelas = req.query.kelas
 	text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!nama) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter nama"})
   if(!kelas) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter kelas"})
@@ -4795,7 +4795,7 @@ router.get('/nulis2', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4803,7 +4803,7 @@ router.get('/nulis', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4815,7 +4815,7 @@ router.get('/nulis', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4823,7 +4823,7 @@ router.get('/nulis3', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4835,7 +4835,7 @@ router.get('/nulis3', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4843,7 +4843,7 @@ router.get('/nulis4', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4855,7 +4855,7 @@ router.get('/nulis4', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4863,7 +4863,7 @@ router.get('/tahta', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4875,7 +4875,7 @@ router.get('/tahta', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4883,7 +4883,7 @@ router.get('/tahta2', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4895,7 +4895,7 @@ router.get('/tahta2', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4903,7 +4903,7 @@ router.get('/tahta3', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4915,7 +4915,7 @@ router.get('/tahta3', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4923,7 +4923,7 @@ router.get('/tahta4', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4935,7 +4935,7 @@ router.get('/tahta4', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4943,7 +4943,7 @@ router.get('/ttp', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4955,7 +4955,7 @@ router.get('/ttp', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4963,7 +4963,7 @@ router.get('/attp', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4975,7 +4975,7 @@ router.get('/attp', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -4983,7 +4983,7 @@ router.get('/text/naruto', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -4995,14 +4995,14 @@ router.get('/text/naruto', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/slot', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.xteam.xyz/game/virtualslot?APIKEY=${xteam}`))
@@ -5020,14 +5020,14 @@ router.get('/slot', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/tebak/huruf', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://leyscoders-api.herokuapp.com/api/tebak-kata?apikey=${leys}`))
@@ -5043,7 +5043,7 @@ router.get('/tebak/huruf', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -5051,7 +5051,7 @@ router.get('/suit', async (req, res, next) => {
         var Apikey = req.query.apikey,
             q = req.query.q
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!q) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter chanel query"})
 
@@ -5071,7 +5071,7 @@ router.get('/suit', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -5079,7 +5079,7 @@ router.get('/qkode', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -5091,7 +5091,7 @@ router.get('/qkode', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -5099,7 +5099,7 @@ router.get('/berkode', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -5111,7 +5111,7 @@ router.get('/berkode', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -5119,7 +5119,7 @@ router.get('/cari/film', async (req, res, next) => {
         var Apikey = req.query.apikey,
             search = req.query.search
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!search) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter search"})
 
@@ -5137,14 +5137,14 @@ router.get('/cari/film', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/film/terbaru', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://lk21-api-zahirr.herokuapp.com/newupload`))
@@ -5161,14 +5161,14 @@ router.get('/film/terbaru', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/tvseries', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://lk21-api-zahirr.herokuapp.com/tv`))
@@ -5185,7 +5185,7 @@ router.get('/tvseries', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -5193,7 +5193,7 @@ router.get('/dewabatch', async (req, res, next) => {
         var Apikey = req.query.apikey,
             search = req.query.search
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!search) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter search"})
 
@@ -5211,7 +5211,7 @@ router.get('/dewabatch', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -5219,7 +5219,7 @@ router.get('/stiker/wa', async (req, res, next) => {
         var Apikey = req.query.apikey,
             search = req.query.search
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!search) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter search"})
 
@@ -5236,7 +5236,7 @@ router.get('/stiker/wa', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -5244,7 +5244,7 @@ router.get('/baca/komik', async (req, res, next) => {
         var Apikey = req.query.apikey,
             search = req.query.search
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!search) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter search"})
 
@@ -5261,7 +5261,7 @@ router.get('/baca/komik', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -5269,7 +5269,7 @@ router.get('/mod/app', async (req, res, next) => {
         var Apikey = req.query.apikey,
             search = req.query.search
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!search) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter search"})
 
@@ -5287,7 +5287,7 @@ router.get('/mod/app', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -5295,7 +5295,7 @@ router.get('/shopee', async (req, res, next) => {
         var Apikey = req.query.apikey,
             search = req.query.search
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!search) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter search"})
 
@@ -5313,7 +5313,7 @@ router.get('/shopee', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -5321,7 +5321,7 @@ router.get('/gsm/arena', async (req, res, next) => {
         var Apikey = req.query.apikey,
             search = req.query.search
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!search) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter search"})
 
@@ -5338,7 +5338,7 @@ router.get('/gsm/arena', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -5346,7 +5346,7 @@ router.get('/sfile', async (req, res, next) => {
         var Apikey = req.query.apikey,
             search = req.query.search
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!search) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter search"})
 
@@ -5363,14 +5363,14 @@ router.get('/sfile', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/drakor', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://leyscoders-api.herokuapp.com/api/drakor?apikey=${leys}`))
@@ -5387,14 +5387,14 @@ router.get('/drakor', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/info/loker', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://leyscoders-api.herokuapp.com/api/info-loker?apikey=${leys}`))
@@ -5411,14 +5411,14 @@ router.get('/info/loker', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/bioskop', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://leyscoders-api.herokuapp.com/api/jadwal-bioskop?apikey=${leys}`))
@@ -5435,7 +5435,7 @@ router.get('/bioskop', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -5443,7 +5443,7 @@ router.get('/wattpad', async (req, res, next) => {
         var Apikey = req.query.apikey,
             search = req.query.search
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!search) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter search"})
 
@@ -5460,14 +5460,14 @@ router.get('/wattpad', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/jurnalotaku', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://leyscoders-api.herokuapp.com/api/jurnalotaku-popular?apikey=${leys}`))
@@ -5484,7 +5484,7 @@ router.get('/jurnalotaku', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -5492,7 +5492,7 @@ router.get('/kiryuu', async (req, res, next) => {
         var Apikey = req.query.apikey,
             search = req.query.search
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!search) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter search"})
 
@@ -5509,14 +5509,14 @@ router.get('/kiryuu', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/news/kompas', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://hadi-api.herokuapp.com/api/kompas`))
@@ -5533,14 +5533,14 @@ router.get('/news/kompas', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/news/detik', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://hadi-api.herokuapp.com/api/detik`))
@@ -5557,14 +5557,14 @@ router.get('/news/detik', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/tribunews', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.zeks.xyz/api/tribunews?apikey=apivinz`))
@@ -5581,14 +5581,14 @@ router.get('/tribunews', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/liputan6', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.zeks.xyz/api/liputan6?apikey=apivinz`))
@@ -5605,14 +5605,14 @@ router.get('/liputan6', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/foxnews', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.zeks.xyz/api/foxnews?apikey=apivinz`))
@@ -5629,14 +5629,14 @@ router.get('/foxnews', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/news/sindo', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://leyscoders-api.herokuapp.com/api/sindo/nasional?apikey=${leys}`))
@@ -5652,14 +5652,14 @@ router.get('/news/sindo', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/news/antara', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://leyscoders-api.herokuapp.com/api/antara-news?apikey=${leys}`))
@@ -5676,14 +5676,14 @@ router.get('/news/antara', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/news/okezone', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://leyscoders-api.herokuapp.com/api/okezone?apikey=${leys}`))
@@ -5700,14 +5700,14 @@ router.get('/news/okezone', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/news/bbc', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://leyscoders-api.herokuapp.com/api/bbc-news?apikey=${leys}`))
@@ -5724,14 +5724,14 @@ router.get('/news/bbc', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/covid/indo', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.kawalcorona.com/indonesia/`))
@@ -5747,14 +5747,14 @@ router.get('/covid/indo', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/covid/dunia', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://photooxy.herokuapp.com/api/covidworld?apikey=kangdev`))
@@ -5773,7 +5773,7 @@ router.get('/covid/dunia', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -5781,7 +5781,7 @@ router.get('/encode/base32', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
 
@@ -5798,7 +5798,7 @@ router.get('/encode/base32', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -5806,7 +5806,7 @@ router.get('/decode/base32', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
 
@@ -5823,7 +5823,7 @@ router.get('/decode/base32', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -5831,7 +5831,7 @@ router.get('/base64', async (req, res, next) => {
         var Apikey = req.query.apikey,
             text = req.query.text
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
         if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
 
@@ -5848,14 +5848,14 @@ router.get('/base64', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/aesthetic', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://raw.githubusercontent.com/melancans/aesthetic/main/aesthetic.json`))
@@ -5872,7 +5872,7 @@ router.get('/aesthetic', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
@@ -5880,7 +5880,7 @@ router.get('/bakarnama', async (req, res, next) => {
 	var Apikey = req.query.apikey,
 	    text = req.query.text
 	
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
   if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
   
@@ -5892,14 +5892,14 @@ router.get('/bakarnama', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/waifu', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.waifu.pics/sfw/waifu`))
@@ -5915,14 +5915,14 @@ router.get('/waifu', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/nekonime', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.waifu.pics/sfw/neko`))
@@ -5938,14 +5938,14 @@ router.get('/nekonime', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/shinobu', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.waifu.pics/sfw/shinobu`))
@@ -5961,14 +5961,14 @@ router.get('/shinobu', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/megumin', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.waifu.pics/sfw/megumin`))
@@ -5984,14 +5984,14 @@ router.get('/megumin', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/sfw/bully', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.waifu.pics/sfw/bully`))
@@ -6007,14 +6007,14 @@ router.get('/sfw/bully', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/sfw/cuddle', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.waifu.pics/sfw/cuddle`))
@@ -6030,14 +6030,14 @@ router.get('/sfw/cuddle', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/sfw/cry', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.waifu.pics/sfw/cry`))
@@ -6053,14 +6053,14 @@ router.get('/sfw/cry', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/sfw/hug', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.waifu.pics/sfw/hug`))
@@ -6076,14 +6076,14 @@ router.get('/sfw/hug', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/sfw/kiss', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.waifu.pics/sfw/kiss`))
@@ -6099,14 +6099,14 @@ router.get('/sfw/kiss', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/sfw/pat', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.waifu.pics/sfw/pat`))
@@ -6122,14 +6122,14 @@ router.get('/sfw/pat', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/sfw/lick', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.waifu.pics/sfw/lick`))
@@ -6145,14 +6145,14 @@ router.get('/sfw/lick', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/sfw/smug', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.waifu.pics/sfw/smug`))
@@ -6168,14 +6168,14 @@ router.get('/sfw/smug', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/sfw/bonk', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.waifu.pics/sfw/bonk`))
@@ -6191,14 +6191,14 @@ router.get('/sfw/bonk', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/sfw/yeet', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.waifu.pics/sfw/yeet`))
@@ -6214,14 +6214,14 @@ router.get('/sfw/yeet', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/sfw/smile', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.waifu.pics/sfw/smile`))
@@ -6237,14 +6237,14 @@ router.get('/sfw/smile', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/sfw/slap', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.waifu.pics/sfw/slap`))
@@ -6260,14 +6260,14 @@ router.get('/sfw/slap', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/sfw/dance', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.waifu.pics/sfw/dance`))
@@ -6283,14 +6283,14 @@ router.get('/sfw/dance', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/wibu/loli', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.fdci.se/rep.php?gambar=anime loli`))
@@ -6307,14 +6307,14 @@ router.get('/wibu/loli', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/wibu/akira', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.fdci.se/rep.php?gambar=anime akira`))
@@ -6331,14 +6331,14 @@ router.get('/wibu/akira', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/wibu/zerotwo', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.fdci.se/rep.php?gambar=anime zerotwo`))
@@ -6355,14 +6355,14 @@ router.get('/wibu/zerotwo', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/wibu/kurumi', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.fdci.se/rep.php?gambar=anime kurumi`))
@@ -6379,14 +6379,14 @@ router.get('/wibu/kurumi', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/wibu/miku', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.fdci.se/rep.php?gambar=anime miku`))
@@ -6403,14 +6403,14 @@ router.get('/wibu/miku', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/wibu/naruto', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.fdci.se/rep.php?gambar=anime naruto`))
@@ -6427,14 +6427,14 @@ router.get('/wibu/naruto', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/wibu/minato', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.fdci.se/rep.php?gambar=anime naruto`))
@@ -6451,14 +6451,14 @@ router.get('/wibu/minato', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/wibu/hinata', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.fdci.se/rep.php?gambar=anime hinata`))
@@ -6475,14 +6475,14 @@ router.get('/wibu/hinata', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/wibu/sasuke', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.fdci.se/rep.php?gambar=anime sasuke`))
@@ -6499,14 +6499,14 @@ router.get('/wibu/sasuke', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/wibu/chika', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.fdci.se/rep.php?gambar=anime chika`))
@@ -6523,14 +6523,14 @@ router.get('/wibu/chika', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/wibu/kaneki', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.fdci.se/rep.php?gambar=anime kaneki`))
@@ -6547,14 +6547,14 @@ router.get('/wibu/kaneki', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/wibu/touka', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.fdci.se/rep.php?gambar=anime touka`))
@@ -6571,14 +6571,14 @@ router.get('/wibu/touka', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/wibu/rize', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.fdci.se/rep.php?gambar=anime rize`))
@@ -6595,14 +6595,14 @@ router.get('/wibu/rize', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/wibu/onichan', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.fdci.se/rep.php?gambar=anime onichan`))
@@ -6619,14 +6619,14 @@ router.get('/wibu/onichan', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
 router.get('/wibu/squidward', async (req, res, next) => {
         var Apikey = req.query.apikey
             
-	if(!Apikey) return res.json(loghandler.notparam)
+	if(!Apikey) return res.sendFile(invalidKey)
 	if(listkey.includes(Apikey)){
 
        fetch(encodeURI(`https://api.fdci.se/rep.php?gambar=squidward`))
@@ -6643,7 +6643,7 @@ router.get('/wibu/squidward', async (req, res, next) => {
          	res.json(loghandler.error)
 })
 } else {
-res.json(loghandler.invalidKey)
+res.sendFile(invalidKey)
 }
 })
 
