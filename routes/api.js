@@ -6638,4 +6638,144 @@ res.sendFile(invalidKey)
 }
 })
 
+router.get('/serti/haram', async (req, res, next) => {
+	var Apikey = req.query.apikey,
+	    text = req.query.text
+	
+	if(!Apikey) return res.sendFile(invalidKey)
+	if(listkey.includes(Apikey)){
+  if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
+  
+      hasil = (`http://rzky.net/docs/api/AnakHaramSerti/img.php?nama=${text}`)
+     data = await fetch(hasil).then(v => v.buffer())
+         await fs.writeFileSync('tolol.png', data)
+        res.sendFile(__path+'/tolol.png')
+         .catch(e => {
+         	res.sendFile(error)
+})
+} else {
+res.sendFile(invalidKey)
+}
+})
+
+router.get('/serti/babu', async (req, res, next) => {
+	var Apikey = req.query.apikey,
+	    text = req.query.text
+	
+	if(!Apikey) return res.sendFile(invalidKey)
+	if(listkey.includes(Apikey)){
+  if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
+  
+      hasil = (`http://rzky.net/docs/api/BabuSerti/img.php?nama=${text}`)
+     data = await fetch(hasil).then(v => v.buffer())
+         await fs.writeFileSync('tolol.png', data)
+        res.sendFile(__path+'/tolol.png')
+         .catch(e => {
+         	res.sendFile(error)
+})
+} else {
+res.sendFile(invalidKey)
+}
+})
+
+router.get('/serti/bucin', async (req, res, next) => {
+	var Apikey = req.query.apikey,
+	    text = req.query.text
+	
+	if(!Apikey) return res.sendFile(invalidKey)
+	if(listkey.includes(Apikey)){
+  if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
+  
+      hasil = (`http://rzky.net/docs/api/BucinSerti/img.php?nama=${text}`)
+     data = await fetch(hasil).then(v => v.buffer())
+         await fs.writeFileSync('tolol.png', data)
+        res.sendFile(__path+'/tolol.png')
+         .catch(e => {
+         	res.sendFile(error)
+})
+} else {
+res.sendFile(invalidKey)
+}
+})
+
+router.get('/serti/gay', async (req, res, next) => {
+	var Apikey = req.query.apikey,
+	    text = req.query.text
+	
+	if(!Apikey) return res.sendFile(invalidKey)
+	if(listkey.includes(Apikey)){
+  if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
+  
+      hasil = (`http://rzky.net/docs/api/GaySerti/img.php?nama=${text}`)
+     data = await fetch(hasil).then(v => v.buffer())
+         await fs.writeFileSync('tolol.png', data)
+        res.sendFile(__path+'/tolol.png')
+         .catch(e => {
+         	res.sendFile(error)
+})
+} else {
+res.sendFile(invalidKey)
+}
+})
+
+router.get('/serti/pacar', async (req, res, next) => {
+	var Apikey = req.query.apikey,
+	    text = req.query.text
+	
+	if(!Apikey) return res.sendFile(invalidKey)
+	if(listkey.includes(Apikey)){
+  if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
+  
+      hasil = (`http://rzky.net/docs/api/PacarSerti/img.php?nama=${text}`)
+     data = await fetch(hasil).then(v => v.buffer())
+         await fs.writeFileSync('tolol.png', data)
+        res.sendFile(__path+'/tolol.png')
+         .catch(e => {
+         	res.sendFile(error)
+})
+} else {
+res.sendFile(invalidKey)
+}
+})
+
+router.get('/serti/sadboy', async (req, res, next) => {
+	var Apikey = req.query.apikey,
+	    text = req.query.text
+	
+	if(!Apikey) return res.sendFile(invalidKey)
+	if(listkey.includes(Apikey)){
+  if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
+  
+      hasil = (`http://rzky.net/docs/api/SadBoySerti/img.php?nama=${text}`)
+     data = await fetch(hasil).then(v => v.buffer())
+         await fs.writeFileSync('tolol.png', data)
+        res.sendFile(__path+'/tolol.png')
+         .catch(e => {
+         	res.sendFile(error)
+})
+} else {
+res.sendFile(invalidKey)
+}
+})
+
+router.get('/serti/surga', async (req, res, next) => {
+	var Apikey = req.query.apikey,
+	    text = req.query.text
+	
+	if(!Apikey) return res.sendFile(invalidKey)
+	if(listkey.includes(Apikey)){
+  if(!text) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter text"})
+  
+      hasil = (`http://rzky.net/docs/api/SurgaSerti/img.php?nama=${text}`)
+     data = await fetch(hasil).then(v => v.buffer())
+         await fs.writeFileSync('tolol.png', data)
+        res.sendFile(__path+'/tolol.png')
+         .catch(e => {
+         	res.sendFile(error)
+})
+} else {
+res.sendFile(invalidKey)
+}
+})
+
 module.exports = router
