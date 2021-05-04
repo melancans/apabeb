@@ -1787,18 +1787,13 @@ router.get('/play/mp3', async (req, res, next) => {
 	if(listkey.includes(Apikey)){
         if(!query) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter query"})
 
-       fetch(encodeURI(`https://api-rull.herokuapp.com/api/yt/playmp3?q=${query}`))
+       fetch(encodeURI(`https://api.zeks.xyz/api/ytplaymp3?apikey=apivinz&q=${query}`))
         .then(response => response.json())
         .then(data => {
              var result = data.result;
              res.json({
              	creator: `${creator}`,
-                 judul: data.result.title,
-                 size: data.filesizeF,
-                 desc: data.result.description,
-                 source: data.result.url,
-                 thumb: data.result.thumbnail,
-                 url: data.result.dl_link,
+                 result
              })
          })
          .catch(e => {
@@ -1817,18 +1812,13 @@ router.get('/play/mp4', async (req, res, next) => {
 	if(listkey.includes(Apikey)){
         if(!query) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter query"})
 
-       fetch(encodeURI(`https://api-rull.herokuapp.com/api/yt/playmp4?q=${query}`))
+       fetch(encodeURI(`https://api.zeks.xyz/api/ytplaymp4?apikey=apivinz&q=${query}`))
         .then(response => response.json())
         .then(data => {
              var result = data.result;
              res.json({
              	creator: `${creator}`,
-                 judul: data.result.title,
-                 size: data.filesizeF,
-                 desc: data.result.description,
-                 source: data.result.url,
-                 thumb: data.result.thumbnail,
-                 url: data.result.dl_link,
+                 result
              })
          })
          .catch(e => {
