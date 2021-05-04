@@ -1594,6 +1594,30 @@ res.sendFile(invalidKey)
 }
 })
 
+router.get('/tebakan', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.sendFile(invalidKey)
+	if(listkey.includes(Apikey)){
+
+       fetch(encodeURI(`http://dt-04.herokuapp.com/api/tebak`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+             res.json({
+                 soal: data.pertanyaan,
+                 jawaban: data.jawaban,
+                 penjelasan: data.jawaban_full,
+             })
+         })
+         .catch(e => {
+         	res.sendFile(error)
+})
+} else {
+res.sendFile(invalidKey)
+}
+})
+
 router.get('/tebak/bendera', async (req, res, next) => {
         var Apikey = req.query.apikey
             
