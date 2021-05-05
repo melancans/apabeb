@@ -6564,4 +6564,32 @@ res.sendFile(invalidKey)
 }
 })
 
+router.get('/zodiak', async (req, res, next) => {
+        var Apikey = req.query.apikey,
+            query = req.query.query
+            
+	if(!Apikey) return res.sendFile(invalidKey)
+	if(listkey.includes(Apikey)){
+        if(!query) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter query"})
+
+       fetch(encodeURI(`https://api.vhtear.com/zodiak?query=${query}&apikey=${vhtear}`))
+        .then(response => response.json())
+        .then(data => {
+             var result = data.result;
+             res.json({
+             	creator: `${creator}`,
+                 ramalan: data.result.ramalan,
+                 nomorhoki: data.result.nomorKeberuntungan,
+                 motivasi: data.result.motivasi,
+                 inspirasi: data.result.inspirasi,
+             })
+         })
+         .catch(e => {
+         	res.sendFile(error)
+})
+} else {
+res.sendFile(invalidKey)
+}
+})
+
 module.exports = router
