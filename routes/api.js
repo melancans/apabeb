@@ -6278,31 +6278,6 @@ res.sendFile(invalidKey)
 }
 })
 
-router.get('/Instagram/story', async (req, res, next) => {
-        var Apikey = req.query.apikey,
-            username = req.query.username
-            
-	if(!Apikey) return res.sendFile(invalidKey)
-	if(listkey.includes(Apikey)){
-        if(!username) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter username"})
-
-       fetch(encodeURI(`https://docs-jojo.herokuapp.com/api/igstory?username=${username}`))
-        .then(response => response.json())
-        .then(data => {
-             var result = data.result;
-             res.json({
-             	creator: `${creator}`,
-                 url: data.result.url,
-             })
-         })
-         .catch(e => {
-         	res.sendFile(error)
-})
-} else {
-res.sendFile(invalidKey)
-}
-})
-
 router.get('/wattpad', async (req, res, next) => {
         var Apikey = req.query.apikey,
             search = req.query.search
@@ -6456,6 +6431,106 @@ router.get('/nama/ninja', async (req, res, next) => {
              res.json({
              	creator: `${creator}`,
                  result
+             })
+         })
+         .catch(e => {
+         	res.sendFile(error)
+})
+} else {
+res.sendFile(invalidKey)
+}
+})
+
+router.get('/meme/indo', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.sendFile(invalidKey)
+	if(listkey.includes(Apikey)){
+
+       fetch(encodeURI(`https://api.zeks.xyz/api/memeindo?apikey=apivinz`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data.result;
+             res.json({
+             	creator: `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.sendFile(error)
+})
+} else {
+res.sendFile(invalidKey)
+}
+})
+
+router.get('/darkjokes', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.sendFile(invalidKey)
+	if(listkey.includes(Apikey)){
+
+       fetch(encodeURI(`https://api.zeks.xyz/api/darkjokes?apikey=apivinz`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data.result;
+             res.json({
+             	creator: `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.sendFile(error)
+})
+} else {
+res.sendFile(invalidKey)
+}
+})
+
+router.get('/soundcloud', async (req, res, next) => {
+        var Apikey = req.query.apikey,
+            query = req.query.query
+            
+	if(!Apikey) return res.sendFile(invalidKey)
+	if(listkey.includes(Apikey)){
+        if(!query) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter query"})
+
+       fetch(encodeURI(`https://api.xteam.xyz/dl/soundcloud?url=https://soundcloud.com/nvl-sounds/${query}&APIKEY=${xteam}`))
+        .then(response => response.json())
+        .then(data => {
+             var result = data.result;
+             res.json({
+             	creator: `${creator}`,
+                 thumb: data.result.img,
+                 to: data.result,
+                 url_mp3: data.dataurl,
+             })
+         })
+         .catch(e => {
+         	res.sendFile(error)
+})
+} else {
+res.sendFile(invalidKey)
+}
+})
+
+router.get('/kalkulator', async (req, res, next) => {
+        var Apikey = req.query.apikey,
+            query = req.query.query
+            
+	if(!Apikey) return res.sendFile(invalidKey)
+	if(listkey.includes(Apikey)){
+        if(!query) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter query"})
+
+       fetch(encodeURI(`https://api.vhtear.com/calculator?value=${query}&apikey=${vhtear}`))
+        .then(response => response.json())
+        .then(data => {
+             var result = data.result;
+             res.json({
+             	creator: `${creator}`,
+                 thumb: data.result.img,
+                 to: data.result,
+                 hasil: data.result.data,
              })
          })
          .catch(e => {
