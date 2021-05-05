@@ -6539,4 +6539,29 @@ res.sendFile(invalidKey)
 }
 })
 
+router.get('/lirik', async (req, res, next) => {
+        var Apikey = req.query.apikey,
+            query = req.query.query
+            
+	if(!Apikey) return res.sendFile(invalidKey)
+	if(listkey.includes(Apikey)){
+        if(!query) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter query"})
+
+       fetch(encodeURI(`https://api.vhtear.com/liriklagu?query=${query}&apikey=${vhtear}`))
+        .then(response => response.json())
+        .then(data => {
+             var result = data.result.result;
+             res.json({
+             	creator: `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.sendFile(error)
+})
+} else {
+res.sendFile(invalidKey)
+}
+})
+
 module.exports = router
