@@ -6503,7 +6503,7 @@ router.get('/soundcloud', async (req, res, next) => {
              	creator: `${creator}`,
                  thumb: data.result.img,
                  to: data.result,
-                 url_mp3: data.dataurl,
+                 result
              })
          })
          .catch(e => {
@@ -6528,8 +6528,6 @@ router.get('/kalkulator', async (req, res, next) => {
              var result = data.result;
              res.json({
              	creator: `${creator}`,
-                 thumb: data.result.img,
-                 to: data.result,
                  hasil: data.result.data,
              })
          })
