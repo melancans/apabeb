@@ -6640,4 +6640,28 @@ res.sendFile(invalidKey)
 }
 })
 
+router.get('/cewek/racing', async (req, res, next) => {
+        var Apikey = req.query.apikey
+            
+	if(!Apikey) return res.sendFile(invalidKey)
+	if(listkey.includes(Apikey)){
+
+       fetch(encodeURI(`https://raw.githubusercontent.com/melancans/aesthetic/main/racing.json`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+        var result = data[Math.floor(Math.random() * data.length)];
+             res.json({
+             	creator: `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.sendFile(error)
+})
+} else {
+res.sendFile(invalidKey)
+}
+})
+
 module.exports = router
